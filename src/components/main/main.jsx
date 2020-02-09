@@ -27,6 +27,7 @@ Main.propTypes = {
   genre: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   filter: PropTypes.array.isRequired,
+  clickOnTitle: PropTypes.func,
   movies: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,
