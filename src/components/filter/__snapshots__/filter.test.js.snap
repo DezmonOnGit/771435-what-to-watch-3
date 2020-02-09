@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render filter should render <Filter /> 1`] = `
+<ul
+  className="test-list"
+>
+  <li
+    className="test-item test-item--active"
+  >
+    <a
+      className="test-link"
+      href="#"
+    >
+      test-filter-1
+    </a>
+  </li>
+  <li
+    className="test-item"
+  >
+    <a
+      className="test-link"
+      href="#"
+    >
+      test-filter-2
+    </a>
+  </li>
+  <li
+    className="test-item"
+  >
+    <a
+      className="test-link"
+      href="#"
+    >
+      test-filter-3
+    </a>
+  </li>
+</ul>
+`;

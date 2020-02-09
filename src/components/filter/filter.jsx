@@ -19,14 +19,12 @@ const Filter = (props) => {
 
 Filter.propTypes = {
   filter: PropTypes.array.isRequired,
-  classes: PropTypes.objectOf(
-      PropTypes.shape({
-        list: PropTypes.string.isRequired,
-        item: PropTypes.string.isRequired,
-        itemActive: PropTypes.string.isRequired,
-        link: PropTypes.string.isRequired,
-      })
-  )
+  classes: PropTypes.shape({
+    list: PropTypes.string.isRequired,
+    item: PropTypes.string.isRequired,
+    itemActive: PropTypes.string.isRequired,
+    link: PropTypes.string.isRequired,
+  }),
 };
 
 export default Filter;

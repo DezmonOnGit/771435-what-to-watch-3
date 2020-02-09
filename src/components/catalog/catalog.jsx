@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const Catalog = (props) => {
 
-  const {filter, movies} = props;
+  const {filter, movies, clickOnTitle} = props;
 
   const filterClasses = {
     list: `catalog__genres-list`,
@@ -26,6 +26,7 @@ const Catalog = (props) => {
 
         <MovieList
           movies = {movies}
+          clickOnTitle={clickOnTitle}
         />
 
       </section>
@@ -35,6 +36,7 @@ const Catalog = (props) => {
 
 Catalog.propTypes = {
   filter: PropTypes.array.isRequired,
+  clickOnTitle: PropTypes.func,
   movies: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,

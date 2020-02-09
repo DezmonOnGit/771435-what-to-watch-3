@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const MoviesList = (props) => {
 
-  const {movies} = props;
+  const {movies, clickOnTitle} = props;
 
   return <React.Fragment>
     <div className="catalog__movies-list">
@@ -14,7 +14,7 @@ const MoviesList = (props) => {
               <img src={item.img.path} alt={item.name} width={item.img.width} height={item.img.height}/>
             </div>
             <h3 className="small-movie-card__title">
-              <a className="small-movie-card__link" href={item.href}>{item.name}</a>
+              <a className="small-movie-card__link" onClick={clickOnTitle} href={item.href}>{item.name}</a>
             </h3>
           </article>;
         })
@@ -24,6 +24,7 @@ const MoviesList = (props) => {
 };
 
 MoviesList.propTypes = {
+  clickOnTitle: PropTypes.func,
   movies: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,

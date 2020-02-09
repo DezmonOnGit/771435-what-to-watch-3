@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const App = (props) => {
 
-  const {name, genre, date, filter, movies} = props;
+  const {name, genre, date, filter, movies, clickOnTitle} = props;
 
   return <React.Fragment>
     <Main
@@ -13,6 +13,7 @@ const App = (props) => {
       date={date}
       filter={filter}
       movies={movies}
+      clickOnTitle={clickOnTitle}
     />
   </React.Fragment>;
 };
@@ -22,6 +23,7 @@ App.propTypes = {
   genre: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   filter: PropTypes.array.isRequired,
+  clickOnTitle: PropTypes.func,
   movies: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string.isRequired,

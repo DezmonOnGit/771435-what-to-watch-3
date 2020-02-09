@@ -5,7 +5,7 @@ import Catalog from "../catalog/catalog.jsx";
 
 const Main = (props) => {
 
-  const {name, genre, date, filter, movies} = props;
+  const {name, genre, date, filter, movies, clickOnTitle} = props;
 
   return <React.Fragment>
     <MovieCard
@@ -17,6 +17,7 @@ const Main = (props) => {
     <Catalog
       filter={filter}
       movies={movies}
+      clickOnTitle={clickOnTitle}
     />
   </React.Fragment>;
 };

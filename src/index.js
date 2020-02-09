@@ -104,6 +104,8 @@ const movies = [
   },
 ];
 
+const clickOnTitle = () => {};
+
 ReactDOM.render(
     <App
       name={film.name}
@@ -111,6 +113,7 @@ ReactDOM.render(
       date={film.date}
       filter={filter}
       movies={movies}
+      clickOnTitle={clickOnTitle}
     />,
     document.getElementById(`root`)
 );

@@ -59,6 +59,7 @@ const MovieCard = (props) => {
 
 MovieCard.propTypes = {
   name: PropTypes.string.isRequired,
+  clickOnMoviesTitle: PropTypes.func,
   genre: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
 };
